@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: aqua;
+    background-color: aqua; /* Light gray background */
     margin: 0;
     padding: 0;
 }
@@ -8,16 +8,17 @@ body {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background */
     padding: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
+    text-align: center; /* Center align the content */
 }
 
 h2 {
-    color: #333;
-    font-weight: bold; 
+    font-weight: bold;
+    font-size: 36px; /* Larger font size */
 }
 
 form {
@@ -26,43 +27,45 @@ form {
 
 input[type="text"] {
     width: 70%;
-    padding: 8px;
+    padding: 10px;
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 button {
-    padding: 8px 16px;
-    background-color: aqua;
+    padding: 10px 20px;
+    background-color: aqua; 
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
 }
 
 button:hover {
     background-color: transparent;
-    color: black;
+    color: black; 
 }
 
 li {
     list-style: none;
     margin-bottom: 10px;
-    font-weight: bold; 
+    color: #333;
+    font-weight: bold;
+    font-size: 18px; /* Larger font size for tasks */
 }
 
 input[type="checkbox"] {
     margin-right: 10px;
 }
 
+/* Style for the remove button */
 #top {
     margin-top: 20px;
 }
 
+/* Additional styling for checked tasks */
 li input[type="checkbox"]:checked + span {
     text-decoration: line-through;
     color: #999;
-    font-weight: bold; 
 }
